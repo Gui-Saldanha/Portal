@@ -1,0 +1,8 @@
+﻿.border-danger {
+    border-color: crimson !important;
+}
+
+.text-danger {
+    font-size: 14px;
+    color: crimson;
+}

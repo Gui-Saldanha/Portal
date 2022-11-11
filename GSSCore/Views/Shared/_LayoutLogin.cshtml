@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSS - Login Autentication</title>
+
+    <!-- Importando estilos de bibliotecas -->
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/lib/gss/css/gss_validation.css" />
+
+    <!-- Importando scripts de bibliotecas -->
+    <script src="~/lib/jquery/jquery.min.js"></script>
+
+    <!-- Importando estilo da página -->
+    <link rel="stylesheet" href="~/css/login/index/style.css" />
+</head>
+<body>
+    <nav class="header">
+        <div class="max-width">
+            <div class="logo"><a href="@Url.Action("Index", "Home")">GSS</a></div>
+        </div>
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer>
+    </footer>
+    <!-- Importando script da página -->
+    <script src="~/js/login/index/script.js"></script>
+
+    <!-- Importando scripts de bibliotecas -->
+    <script src="~/lib/gss/js/gss_clean.js"></script>
+    <script src="~/lib/gss/js/gss_password.js"></script>
+    <script src="~/lib/gss/js/gss_validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GSS - Portfólio</title>
+
+        <!-- Importando estilos de bibliotecas -->
+        <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+
+        <!-- Importando scripts de bibliotecas -->
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/typed/typed.min.js"></script>
+
+        <!-- Importando estilo da página -->
+        <link rel="stylesheet" href="~/css/portfolio/index/style.css" />
+    </head>
+    <body>
+        <header>
+        </header>
+        <main class="container">
+            @RenderBody()
+        </main>
+        <footer>
+        </footer>
+        @await RenderSectionAsync("Scripts", required: false)
+        <!-- Importando script da página -->
+        <script src="~/js/portfolio/index/script.js"></script>
+    </body>
+</html>

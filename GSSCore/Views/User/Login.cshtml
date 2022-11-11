@@ -1,0 +1,100 @@
+﻿@model Model.ViewModel.UserVM
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="content first-content">
+    <div class="first-column">
+        <h2 class="title title-primary">Seja Bem vindo!</h2>
+        <p class="description description-primary">Para conectar-se conosco</p>
+        <p class="description description-primary">por favor faça login com suas informações pessoais</p>
+        <button id="signin" class="btn btn-primary">Entrar</button>
+    </div>
+    <div class="second-column">
+        <h2 class="title title-second">Criar Conta</h2>
+        <div class="social-media">
+            <ul class="list-social-media">
+                <li class="item-social-media">
+                    <a class="link-social-media" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="item-social-media">
+                    <a class="link-social-media" href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li class="item-social-media">
+                    <a class="link-social-media" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="description description-second">ou use seu e-mail para cadastro:</p>
+        <form class="form">
+            <label class="label-input" for="">
+                <i class="far fa-user icon-modify"></i>
+                <input type="text" asp-for="Name" placeholder="Nome">
+            </label>
+
+            <label class="label-input" for="">
+                <i class="fas fa-lock icon-modify"></i>
+                <input type="password" asp-for="Password" placeholder="Senha">
+            </label>
+
+            <label class="label-input" for="">
+                <i class="fas fa-lock icon-modify"></i>
+                <input type="password" placeholder="Confirma Senha">
+            </label>
+
+            <button type="submit" asp-action="SignUp" class="btn btn-second">Cadastrar</button>
+        </form>
+    </div>
+</div>
+<div class="content second-content">
+    <div class="first-column">
+        <h2 class="title title-primary">Olá, amigo!</h2>
+        <p class="description description-primary">Insira suas informações pessoais</p>
+        <p class="description description-primary">e comece sua jornada conosco</p>
+        <button id="signup" class="btn btn-primary">Cadastrar</button>
+    </div>
+    <div class="second-column">
+        <h2 class="title title-second">Entrar com</h2>
+        <div class="social-media">
+            <ul class="list-social-media">
+                <li class="item-social-media">
+                    <a class="link-social-media" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="item-social-media">
+                    <a class="link-social-media" href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li class="item-social-media">
+                    <a class="link-social-media" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="description description-second">ou use seu e-mail da conta:</p>
+        <form class="form">
+
+            <label class="label-input" for="">
+                <i class="far fa-envelope icon-modify"></i>
+                <input type="email" asp-for="PersonVM.ContactVM.Email" placeholder="E-mail">
+            </label>
+
+            <label class="label-input" for="">
+                <i class="fas fa-lock icon-modify"></i>
+                <input type="password" asp-for="Password" placeholder="Senha">
+            </label>
+
+            <a class="password" href="#">Esqueceu sua senha?</a>
+            <button type="submit" asp-action="SignIn" class="btn btn-second">Entrar</button>
+        </form>
+    </div>
+</div>
